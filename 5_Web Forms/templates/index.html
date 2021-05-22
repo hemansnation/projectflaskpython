@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<link rel="stylesheet" 
+	href="{{ url_for('static', 
+	filename='css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{url_for('static', 
+	filename='css/bootstrap-theme.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', 
+	filename='css/theme.css')}}">
+</head>
+<body>
+
+	<div class="container theme-showcase">
+		
+		<div class="jumbotron">
+			<h1>Flask Comment Project</h1>
+			<a href="{{ url_for('sign') }}" type="button" class="btn btn-link">
+				Post your Comment
+			</a>
+		</div>
+
+		<div class="page-header">
+			<h1>Name</h1>			
+		</div>
+		<div class="well">
+			<p>This is commnet.</p>
+		</div>
+	</div>
+
+</body>
+</html>

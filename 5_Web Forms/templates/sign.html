@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign User</title>
+	<link rel="stylesheet" 
+	href="{{ url_for('static', 
+	filename='css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{url_for('static', 
+	filename='css/sign.css')}}">
+</head>
+<body>
+
+	<div class="container">
+		<form class="form-signin" action="{{ url_for('example') }}">
+			<h2 class="form-signin-heading">Sign in to Post a Commnet</h2>
+
+			<div class="form-group">
+				<label class="sr-only">Name</label>
+				<input type="text" name="name" required />
+			</div>
+
+			<div class="form-group">
+				<label class="sr-only">Commnet</label>
+				<textarea class="form-control" rows="5" ></textarea>
+			</div>
+
+			<button class="btn btn-lg btn-primary btn-block" >Post</button>
+			
+		</form>
+		
+	</div>
+
+</body>
+</html>
