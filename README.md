@@ -19,5 +19,3 @@ Contents :
 
 8.Database Connectivity
 
-# For More Learning Contact
-# 9074919189
